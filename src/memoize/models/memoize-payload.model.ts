@@ -4,4 +4,5 @@ export interface MemoizePayload {
   extractHash: UniqueIdExtractor;
   doUseWeakMap?: boolean;
   clearCacheTimeout?: number;
+  debugReporter?: (message: string, state?: Map<any, unknown> | WeakMap<object, unknown> | unknown) => void;
 }
