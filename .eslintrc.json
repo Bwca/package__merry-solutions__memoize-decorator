@@ -26,10 +26,11 @@
   },
   "plugins": ["@typescript-eslint", "jest", "import"],
   "rules": {
+    "no-unused-vars": "warn",
     "indent": "off",
     "linebreak-style": "off",
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "always"],
     "prettier/prettier": [
       "warn",
       {
