@@ -4,7 +4,7 @@ import { MemoizePayload } from './models/memoize-payload.model';
 export function memoize(args: Omit<MemoizePayload, 'doUseWeakMap'>): MemoizeDecorator;
 export function memoize(args: Omit<MemoizePayload, 'clearCacheTimeout'>): MemoizeDecorator;
 
-export function memoize({ extractHash, clearCacheTimeout, doUseWeakMap, debugReporter }: MemoizePayload): MemoizeDecorator {
+export function memoize({ extractUniqueId, clearCacheTimeout, doUseWeakMap, debugReporter }: MemoizePayload): MemoizeDecorator {
   return (target: unknown, propertyKey: string, descriptor: PropertyDescriptor): void => {
     let cacheTeardownTimer: ReturnType<typeof setTimeout>;
 
@@ -30,7 +30,7 @@ export function memoize({ extractHash, clearCacheTimeout, doUseWeakMap, debugRep
     descriptor.value = function (...args: unknown[]) {
       startTeardownTimeout?.();
 
-      const uniqueId: any = extractHash(...args);
+      const uniqueId: any = extractUniqueId(...args);
       debugReporter?.('Looking for a value with unique id of ', uniqueId);
 
       if (cache.has(uniqueId)) {
