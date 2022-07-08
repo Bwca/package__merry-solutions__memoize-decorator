@@ -1,7 +1,7 @@
 {
   "name": "@merry-solutions/memoize-decorator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A function to decorate methods and memoize their results to speed up further requests done with the same arguments.",
   "main": "./dist/index.js",
   "files": [
     "dist/**"
@@ -21,7 +21,13 @@
     ]
   },
   "bin": "",
-  "keywords": [],
+  "keywords": [
+    "memoize",
+    "memoization",
+    "performance",
+    "decorator",
+    "typescript"
+  ],
   "author": {
     "name": "Volodymyr Yepishev",
     "email": "i.m.bwca@gmail.com"

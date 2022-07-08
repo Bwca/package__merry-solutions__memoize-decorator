@@ -74,10 +74,6 @@ describe('Tests for memoize decorator', () => {
       }
     }
 
-    afterEach(() => {
-      jest.clearAllMocks();
-    });
-
     it('The decorated version of the countdown with weakmap should be at least 4 times faster', () => {
       // Arrange
       const countdown: CalculationPayload = {
