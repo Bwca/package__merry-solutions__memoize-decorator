@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A function to decorate methods and memoize their results to speed up further requests done with the same arguments.",
   "main": "./dist/index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "dist/**"
   ],
