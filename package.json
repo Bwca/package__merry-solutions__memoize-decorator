@@ -1,5 +1,5 @@
 {
-  "name": "@merry-solutions/some-merry-package",
+  "name": "@merry-solutions/memoize-decorator",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -29,12 +29,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bwca/ts-template-repo.git"
+    "url": "git+https://github.com/Bwca/package__merry-solutions__memoize-decorator.git"
   },
   "bugs": {
-    "url": "https://github.com/Bwca/ts-template-repo/issues"
+    "url": "https://github.com/Bwca/package__merry-solutions__memoize-decorator/issues"
   },
-  "homepage": "https://github.com/Bwca/ts-template-repo#readme",
+  "homepage": "https://github.com/Bwca/package__merry-solutions__memoize-decorator#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
